@@ -8,7 +8,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="container"></div>
+    <div class="wrapper">
+      <div class="header">Etch-A-Sketchpad</div>
+      <div class="navbar">
+        <input type="color" value="#ff0f00" class="color" />
+        <div class="size-wrapper">
+          <div class="size-selection">12 x 12</div>
+          <input class="size-slider" type="range" value="12" min="1" max="64" />
+        </div>
+        <div class="btn-wrapper">
+          <button class="color-btn">Color</button>
+          <button class="rainbow-btn">Rainbow</button>
+          <!-- <button class="remove-gridlines">Remove Gridlines</button> -->
+          <button class="eraser-btn">Eraser</button>
+          <!-- <button class="clear-btn">Clear</button> -->
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="container"></div>
     <script src="app.js"></script>
   </body>
 </html>
